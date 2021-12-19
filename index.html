@@ -7,13 +7,15 @@
 
     </div>
     <div>
-        <button id="next_open_button" onclick="appendResult();">Open Next Pack</button>
-        <button id="generate_image_button" >Generate Result Image</button>
-        <div>Remaining Packs: <span id="pack_count">20</span></div>
-        <div id="result_container" style="height: 80%; overflow-y: scroll;"></div>
+        <button id="next_open_button" class="action-button" onclick="appendResult();">Open Next Pack</button>
+        <button id="toggle_summary_button" style="display: none;" class="action-button" onclick="toggleView()">View Summary</button>
+        <button id="generate_image_button" style="display: none;">Generate Result Image</button>
     </div>
 
-    <div id="summary_container">
+    <div id="result_container" class="containers" style="height: 80%; overflow-y: scroll;">
+        <div>Remaining Packs: <span id="pack_count">20</span></div>
+    </div>
+    <div id="summary_container" class="containers" style="display: none;">
     </div>
 </div>
 <div style="text-align: center;left: 0; bottom: 0; width: 100%;">
@@ -23,3 +25,4 @@
 
 <script src='main.js'></script>
 <script src='html2canvas.min.js'></script>
+<link rel="stylesheet" href="style.css">

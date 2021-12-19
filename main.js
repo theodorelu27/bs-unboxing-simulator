@@ -46,15 +46,15 @@ var currentDisplayedPack = 0;
 var currentPackContents = [];
 
 var TEMPORARY_LIST_HACK = "001;Evangelion Production Model Unit-02 Revised Beta;0$003;Evangelion Production Model (WILLE Custom) Unit-08 Beta;0$006;Evangelion Production Model Unit-02 Revised Gamma -Machine Gun-;0$007;"
-+ "Evangelion Production Model (WILLE Custom) Unit-08 Beta -Sniper Rifle-;0$0012;EVANGELION Mark. 09 -Wunder Raiding-;0$0014;EVANGELION Mark.04 Code 4A;0$0015;EVANGELION Mark.04 Code 4B;0$0016;Evangelion Test Type Unit-01"
-+ "-Dummy System-;0$0018;EVANGELION Mark.04 Code 4C;0$0019;EVANGELION Mark.06;0$0022;Evangelion Unit-13 -Defense Unit-;0$0029;The 3rd Apsotle;0$0031;The 5th Apostle;0$0032;The 12th Apostle;0$0034;The 7th Apostle;0$0035;The 9th "
-+ "Apostle;0$0041;Dummy System;0$0044;WILLE;0$0046;SEELE;0$0052;Central Dogma's Deepest Part;0$0053;The 2nd Apostle Lilith;0$0056;This Is The Last One!;0$0057;Adults Know The Right Time To Be Sly;0$0059;We've Won;0$0060;"
-+ "Go! Shinji-kun;0$0062;Pattern Blue;0$009;Evangelion Production Model Unit-02 -To Work a Miracle-;2$0011;Evangelion Production Model New Unit-02 Alpha;2$0021;Evangelion Test Type Unit-01 -To Work a Miracle-;2$0026;"
-+ "Evangelion Prototype Unit-00 (Revised) -To Work A Miracle-;2$0037;The 10th Apostle;2$0038;Shikinami Asuka Langley -WILLE-;2$0039;Ayanami-Rei (Tentative Name);2$0042;The Spear of Longinus;2$0054;Ikari Gendo;2$002;Evangelion "
-+ "Production Model (WILLE Custom) Unit-08 Alpha;1$004;Evangelion Production Model Unit-02 Revised Gamma;1$0010;Evangelion Production Model (WILLE Custom) Unit-08 Beta Temporary Combat Form;1$0017;EVANGELION Mark.09;1$0020;"
-+ "The First Adam's Vessel;1$0023;Evangelion Unit-13 Pseudo-Synthesis 3+ Form (Estimated);1$0024;Evangelion Provisional Unit-05 -Spear of Longinus Basic Type (Pseudo-Restoration)-;1$0025;Evangelion Prototype Unit-00 "
-+ "(Revised) -N2 Warhead Bomb-;1$0027;The 10th Apostle -Unit-00 Devoured-;1$0028;The 13th Apostle;1$0030;The 4th Apostle;1$0033;The 6th Apostle;1$0036;The 8th Apostle;1$0040;Ikari Shinji -Unit-13 Plugsuit-;1$0043;AAA Wunder;1$0048;"
-+ "Akagi Ritsuko;1$0055;I Know That Already!;1$0058;Now The Promised Time Has Come, Ikari Shinji-kun. This Time, I'll Definitely Make You Happy;1$0061;You Won't Die. Because I'll Protect You;1$005;Evangelion Production Model Unit-02 -Thunder Spear- / Evangelion Production Model Unit-02 Beast Form 2nd Phase (Type 1);3$008;Evangelion Production Model Unit-02 Revised Gamma -Wunder Saving- / Evangelion Production Model Unit-02 Revised Gamma -Code 777-;3$0013;Evangelion Test Type Unit-01 -First Activation- / Evangelion Test Type Unit-01 -Berserk-;3$0045;Shikinami Asuka Langley -Uniform- / Shikinami Asuka Langley -Plugsuit-;3$0047;Nagisa Kaworu / Nagisa Kaworu -Mark. 06 Plugsuit-;3$0049;Ikari Shinji -Uniform- / Evangelion Unit-01 Pilot Ikari Shinji;3$0050;Makinami Mari Illustrious -Uniform- / Makinami Mari Illustrious -Plugsuit-;3$0051;Ayanami Rei -Uniform- / Ayanami Rei -Plugsuit-;3$S09;Evangelion Production Model Unit-02 -To Work a Miracle-;5$S21;Evangelion Test Type Unit-01 -To Work a Miracle-;5$S26;Evangelion Prototype Unit-00 (Revised) -To Work A Miracle-;5$S38;Shikinami Asuka Langley -WILLE-;5$S39;Ayanami-Rei (Tentative Name);5$S40;Ikari Shinji -Unit-13 Plugsuit-;5$SX05;Nagisa Kaworu -Unit-13 Plugsuit-;5$X01;EVANGELION Mark. 06 -Spear of Cassius-;4$X02;Evangelion Unit-13;4$X03;Evangelion Test Type Unit-01 Pseudo-Synthesis 2nd Form;4$X04;Shikinami Asuka Langley -Test Suit-;4$X05;Nagisa Kaworu -Unit-13 Plugsuit-;4$X06;Ayanami Rei -Feeling Warm-;4$XX01;Ikari Yui;5";
++ "Evangelion Production Model (WILLE Custom) Unit-08 Beta -Sniper Rifle-;0$012;EVANGELION Mark. 09 -Wunder Raiding-;0$014;EVANGELION Mark.04 Code 4A;0$015;EVANGELION Mark.04 Code 4B;0$016;Evangelion Test Type Unit-01"
++ "-Dummy System-;0$018;EVANGELION Mark.04 Code 4C;0$019;EVANGELION Mark.06;0$022;Evangelion Unit-13 -Defense Unit-;0$029;The 3rd Apsotle;0$031;The 5th Apostle;0$032;The 12th Apostle;0$034;The 7th Apostle;0$035;The 9th "
++ "Apostle;0$041;Dummy System;0$044;WILLE;0$046;SEELE;0$052;Central Dogma's Deepest Part;0$053;The 2nd Apostle Lilith;0$056;This Is The Last One!;0$057;Adults Know The Right Time To Be Sly;0$059;We've Won;0$060;"
++ "Go! Shinji-kun;0$062;Pattern Blue;0$009;Evangelion Production Model Unit-02 -To Work a Miracle-;2$011;Evangelion Production Model New Unit-02 Alpha;2$021;Evangelion Test Type Unit-01 -To Work a Miracle-;2$026;"
++ "Evangelion Prototype Unit-00 (Revised) -To Work A Miracle-;2$037;The 10th Apostle;2$038;Shikinami Asuka Langley -WILLE-;2$039;Ayanami-Rei (Tentative Name);2$042;The Spear of Longinus;2$054;Ikari Gendo;2$002;Evangelion "
++ "Production Model (WILLE Custom) Unit-08 Alpha;1$004;Evangelion Production Model Unit-02 Revised Gamma;1$010;Evangelion Production Model (WILLE Custom) Unit-08 Beta Temporary Combat Form;1$017;EVANGELION Mark.09;1$020;"
++ "The First Adam's Vessel;1$023;Evangelion Unit-13 Pseudo-Synthesis 3+ Form (Estimated);1$024;Evangelion Provisional Unit-05 -Spear of Longinus Basic Type (Pseudo-Restoration)-;1$025;Evangelion Prototype Unit-00 "
++ "(Revised) -N2 Warhead Bomb-;1$027;The 10th Apostle -Unit-00 Devoured-;1$028;The 13th Apostle;1$030;The 4th Apostle;1$033;The 6th Apostle;1$036;The 8th Apostle;1$040;Ikari Shinji -Unit-13 Plugsuit-;1$043;AAA Wunder;1$048;"
++ "Akagi Ritsuko;1$055;I Know That Already!;1$058;Now The Promised Time Has Come, Ikari Shinji-kun. This Time, I'll Definitely Make You Happy;1$061;You Won't Die. Because I'll Protect You;1$005;Evangelion Production Model Unit-02 -Thunder Spear- / Evangelion Production Model Unit-02 Beast Form 2nd Phase (Type 1);3$008;Evangelion Production Model Unit-02 Revised Gamma -Wunder Saving- / Evangelion Production Model Unit-02 Revised Gamma -Code 777-;3$013;Evangelion Test Type Unit-01 -First Activation- / Evangelion Test Type Unit-01 -Berserk-;3$045;Shikinami Asuka Langley -Uniform- / Shikinami Asuka Langley -Plugsuit-;3$047;Nagisa Kaworu / Nagisa Kaworu -Mark. 06 Plugsuit-;3$049;Ikari Shinji -Uniform- / Evangelion Unit-01 Pilot Ikari Shinji;3$050;Makinami Mari Illustrious -Uniform- / Makinami Mari Illustrious -Plugsuit-;3$051;Ayanami Rei -Uniform- / Ayanami Rei -Plugsuit-;3$S09;Evangelion Production Model Unit-02 -To Work a Miracle-;5$S21;Evangelion Test Type Unit-01 -To Work a Miracle-;5$S26;Evangelion Prototype Unit-00 (Revised) -To Work A Miracle-;5$S38;Shikinami Asuka Langley -WILLE-;5$S39;Ayanami-Rei (Tentative Name);5$S40;Ikari Shinji -Unit-13 Plugsuit-;5$SX05;Nagisa Kaworu -Unit-13 Plugsuit-;5$X01;EVANGELION Mark. 06 -Spear of Cassius-;4$X02;Evangelion Unit-13;4$X03;Evangelion Test Type Unit-01 Pseudo-Synthesis 2nd Form;4$X04;Shikinami Asuka Langley -Test Suit-;4$X05;Nagisa Kaworu -Unit-13 Plugsuit-;4$X06;Ayanami Rei -Feeling Warm-;4$XX01;Ikari Yui;5";
 
 function generateBox() {
     rarityRates[RARITY_RARE] = MAX_RARE_AMOUNT - rarityRates[RARITY_EXTRA_RARE] - rarityRates[RARITY_MASTER_RARE];
@@ -64,16 +64,11 @@ function generateBox() {
     generateSummary();
     document.querySelector('#generate_image_button').addEventListener('click', generateImage);
 
-    console.log(rarityRates);
-
     for (const [key, value] of Object.entries(rarityRates)) {
         generatePacks(value, key);
     }
 
     shuffle(packResults);
-
-    console.log("Final Result");
-    console.log(packResults);
 }
 
 function generatePacks(amount, extra) {
@@ -186,7 +181,7 @@ function appendResult() {
     document.getElementById("pack_count").innerHTML = --displayedPackAmount;
     if(displayedPackAmount == 0) {
         document.getElementById("next_open_button").remove();
-        document.getElementById("generate_image_button").style.display = "";
+        document.getElementById("toggle_summary_button").style.display = "";
     }
 }
 
@@ -236,8 +231,7 @@ function generateRareTable(rarity) {
         tdNode = document.createElement('td');
         
         imgNode = new Image();
-        imgNode.src = "https://www.dropbox.com/s/9mi2tw34yliof8r/" + item['code'] + ".png";
-        imgNode.crossOrigin = "anonymous";
+        imgNode.src = "assets/" + item['code'] + ".png";
 
         tdNode.appendChild(imgNode);
         tdNode.setAttribute("class", "column-" + item['code']);
@@ -314,6 +308,29 @@ function generateNormalTable(rarity) {
     summaryDiv.appendChild(tableElement);
 }
 
+var SHOW_PACK = 0;
+var SHOW_SUMMARY = 1;
+var currentDisplayStep = 0;
+
+function toggleView() {
+    var buttons = document.getElementsByClassName("containers");
+    currentDisplayStep = (currentDisplayStep + 1) % 2;
+
+    for (var i = 0; i<buttons.length; i++) {
+        buttons[i].style.display = "none";
+    }
+
+    switch(currentDisplayStep) {
+        case SHOW_PACK:
+            document.getElementById("result_container").style.display = "";
+            break;
+        case SHOW_SUMMARY:
+            document.getElementById("summary_container").style.display = "";
+            break;
+    }
+}
+
+// probably we'll revisit in future updates
 function generateImage() {
     const filename = "BS Box Unboxing Result.png";
 
