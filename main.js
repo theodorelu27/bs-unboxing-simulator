@@ -335,5 +335,8 @@ function toggleView() {
 // show one pack result
 // generate image
 
-generateBox();
 
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+    generateBox();
+});
