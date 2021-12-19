@@ -331,21 +331,6 @@ function toggleView() {
     }
 }
 
-// probably we'll revisit in future updates
-function generateImage() {
-    const filename = "BS Box Unboxing Result.png";
-
-    html2canvas(document.querySelector('#summary_container')).then(canvas => {
-        const dataURL = canvas.toDataURL();
-        const imgButton = document.querySelector('#generate_image_button'); // change with the genrate image button
-
-        imgButton.removeEventListener('click', generateImage);
-        imgButton.innerHTML = '';
-        imgButton.insertAdjacentHTML('beforeend', `<a href="${dataURL}" download="${filename}">Download Image</a><br><br>`);
-    });
-}
-
-
 // generate list
 // show one pack result
 // generate image
