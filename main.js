@@ -62,7 +62,6 @@ function generateBox() {
     // generate 20 packs and then randomize
     buildPoolList();
     generateSummary();
-    document.querySelector('#generate_image_button').addEventListener('click', generateImage);
 
     for (const [key, value] of Object.entries(rarityRates)) {
         generatePacks(value, key);
