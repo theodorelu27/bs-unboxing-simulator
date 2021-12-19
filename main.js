@@ -323,6 +323,7 @@ function toggleView() {
     switch(currentDisplayStep) {
         case SHOW_PACK:
             document.getElementById("result_container").style.display = "";
+            document.getElementById("remaining_packs_container").style.display = "";
             break;
         case SHOW_SUMMARY:
             document.getElementById("summary_container").style.display = "";
